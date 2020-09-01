@@ -1,15 +1,4 @@
 terraform {
-  backend "remote" {
-    hostname = "app.terraform.io"
-    organization = "rgustafsson"
-
-    workspaces {
-      name = "gcp-compute"
-    }
-  }
-}
-
-terraform {
   required_version = ">= 0.11.1"
 }
 
